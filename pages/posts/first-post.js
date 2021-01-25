@@ -10,7 +10,8 @@ export default function FirstPost() {
       </Head>
       <main>
         <h1>First Post</h1>
-        <h1>Head {' '}<Link href="/"><a>back to Home</a></Link>!</h1>
+        <p>I am super loving NextJS!</p>
+        <p>Write your blog content here!</p>
       </main>
     </Layout>
   )
