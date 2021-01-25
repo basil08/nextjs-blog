@@ -37,6 +37,17 @@ Next.js has built-in support for styled-jsx, for CSS and Sass which allows you t
 
 CSS Modules automatically generates unique class names. No class name collisons. 
 
+To load global CSS files, create a file called pages/_app.js with the following content:
 
+```jsx
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+```
+App component is the top-level component which will be common across all the different pages. 
+Can use this App component to keep state when navigating between pages, for example.
 
+Can add global CSS files by importing them from pages/_app.js. You **cannot** import global CSS anywhere else.
+
+can place the global CSS file anywhere and use any name.
 
