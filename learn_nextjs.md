@@ -183,8 +183,23 @@ function Profile() {
   return <div>hello {data.name}!</div>
 }
 ```
+# Dynamic Routes  
+
+URL for these pages depend on the blog data, which means we need to use dynamic routes.
+
+![Image "Page Path External Data"][5]
+
+* Pages that begin with `[` and end with `]` are dynamic routes in Next.js.
+* write code that will render a post page
+* add an async `getStaticPaths` function to return a list of possible ids.
+
+![HOWTO "How to Dynamic Routes"][6]
+
+
 
 [1]: ./learn/images/server-side-rendering-with-data.png
 [2]: ./learn/images/static-generation-without-data.png
 [3]: ./learn/images/static-generation-with-data.png
 [4]: ./learn/images/client-side-rendering.png
+[5]: ./learn/images/page-path-external-data.png
+[6]: ./learn/images/how-to-dynamic-routes.png
