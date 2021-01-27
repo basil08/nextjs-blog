@@ -6,18 +6,19 @@
 
 .header {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .headerImage {
   width: 6rem;
   height: 6rem;
+  padding: 10px;
 }
 
 .headerHomeImage {
   width: 8rem;
   height: 8rem;
+  padding: 10px;
 }
 
 .backToHome {
