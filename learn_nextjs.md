@@ -242,6 +242,38 @@ export async function getStaticProps({ params }) {
 
 access the Next.js router, you can do so by importing the useRouter hook from next/router.
 
+# API Routes
+
+create an API endpoint as a Node.js serverless function
+
+create an API endpoint inside a Next.js app by creating a **function** inside `pages/api`
+
+```jsx
+// req = HTTP incoming message, res = HTTP server response
+export default function handler(req, res) {
+  // ...
+}
+```
+can be deployed as Serverless Functions (also known as Lambdas).
+
+`req` is an instance of http.IncomingMessage, plus some pre-built middlewares
+
+`res` is an instance of http.ServerResponse, plus some helper functions 
+
+Do Not Fetch an API Route from `getStaticProps` or `getStaticPaths`
+`getStaticProps` and  `getStaticPaths` runs only on the server-side. It will never be run on the client-side. It won’t even be included in the JS bundle for the browser. That means you can write code such as direct database queries without them being sent to browsers.
+
+### handling form input 
+
+good use case for API Routes is handling form input. For example, you can create a form on your page and have it send a POST request to your API Route. You can then write code to directly save it to your database. The API Route code will not be part of your client bundle, so you can safely write server-side code.
+
+Static Generation not ideal when you’re writing a draft on your headless CMS and want to preview the draft immediately on your page. Solution: See [preview mode ](https://nextjs.org/docs/advanced-features/preview-mode)
+
+API Routes can be dynamic, just like regular pages.
+
+# Deploying 
+
+
 
 
 [1]: ./learn/images/server-side-rendering-with-data.png
