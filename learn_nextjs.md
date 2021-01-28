@@ -273,8 +273,25 @@ API Routes can be dynamic, just like regular pages.
 
 # Deploying 
 
+* Set up GitHub repo
+* Sign up to vercel and authorize it to access all your GH repos.
+* From vercel dashboard preview basic settings and then deploy.
+* DPS: Deploy, Preview, Ship
 
+Can setup custom domains. Vercel auto-renews SSL certificates. Uses HTTPS OOTB (out-of-the-box). 
 
+Make a branch with all new changes, vercel will create a "preview build" and deploy it.
+Once satisfied, merge it into `main`
+
+# Nextjs has TypeScript support  
+
+## setup 
+
+create a tsconfig.json in root directory and install reqd packages.  
+
+Next creates next-env.d.ts file; ensures Nextjs types are to the TS compiler. Don't **touch** this file.  
+
+look up Nextjs types [here](https://nextjs.org/learn/excel/typescript/nextjs-types)
 
 [1]: ./learn/images/server-side-rendering-with-data.png
 [2]: ./learn/images/static-generation-without-data.png
