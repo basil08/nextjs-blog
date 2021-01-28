@@ -195,6 +195,53 @@ URL for these pages depend on the blog data, which means we need to use dynamic 
 
 ![HOWTO "How to Dynamic Routes"][6]
 
+## tips  
+
+`getStaticPaths` can fetch data from any data source
+
+* In development (`npm run dev` or `yarn dev`), getStaticPaths runs on every request.
+* In production, getStaticPaths runs at build time.
+
+## fallback  
+
+* If fallback is false, then any paths not returned by getStaticPaths will result in a 404 page.
+
+* If fallback is true, then the behavior of getStaticProps changes:
+
+The paths returned from getStaticPaths will be rendered to HTML at build time.
+The paths that have not been generated at build time will not result in a 404 page. Instead, Next.js will serve a “fallback” version of the page on the first request to such a path.
+In the background, Next.js will statically generate the requested path. Subsequent requests to the same path will serve the generated page, just like other pages pre-rendered at build time.
+
+* If fallback is blocking, then new paths will be server-side rendered with getStaticProps, and cached for future requests so it only happens once per path.
+
+## Catch-all routes  
+
+can be extended to catch all paths by adding three dots (...) inside the brackets.
+
+pages/posts/[...id].js matches /posts/a, but also /posts/a/b, /posts/a/b/c and so on
+in getStaticPaths, you must return an array as the value of the id key
+```jsx
+return [
+  {
+    params: {
+      // Statically Generates /posts/a/b/c
+      id: ['a', 'b', 'c']
+    }
+  }
+  //...
+]
+```
+
+And params.id will be an array in getStaticProps
+```jsx
+export async function getStaticProps({ params }) {
+  // params.id will be like ['a', 'b', 'c']
+}
+```
+### Next.js router 
+
+access the Next.js router, you can do so by importing the useRouter hook from next/router.
+
 
 
 [1]: ./learn/images/server-side-rendering-with-data.png
