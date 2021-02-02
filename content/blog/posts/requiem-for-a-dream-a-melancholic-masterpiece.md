@@ -2,6 +2,7 @@
 title: ! '"Requiem for a Dream" - A Melancholic Masterpiece'
 author: Basil Labib
 excerpt_separator: <!--more-->
+date: '2020-10-30'
 ---
 
 _Spoilers ahead. Of course._   

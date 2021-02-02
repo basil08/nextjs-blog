@@ -1,6 +1,7 @@
 ---
 title: My first digital hackathon
 author: Basil Labib
+date: '2020-10-17'
 ---
 
 Have you ever noticed that some things that are meant to happen just happens? And things that you plan but ain't meant to happen either fail or end up being sour enough to make you wonder why you started in the first place.    

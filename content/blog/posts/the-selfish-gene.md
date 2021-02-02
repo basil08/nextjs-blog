@@ -3,6 +3,7 @@ title: ! 'Thoughts on "The Selfish Gene"'
 author: Basil Labib
 tags: gene biology dawkins
 excerpt_separator: <!--more-->
+date: '2020-12-30'
 ---
 ## Abstract
 

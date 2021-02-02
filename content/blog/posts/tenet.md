@@ -3,6 +3,7 @@ title: Tenet
 author: Basil Labib
 tags: nolan tenet temporal time
 excerpt_separator: <!--more-->
+date: '2020-12-28'
 ---
 
 ## TL;DR    

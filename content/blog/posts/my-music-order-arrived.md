@@ -1,6 +1,7 @@
 ---
 title: My music order showed up
 author: Basil Labib
+date: '2020-12-20'
 ---
 
 A rather crazy self-imposed project which I had the faintest of ideas will become all-devouring and pose countless hurdles for me to dodge. But yeah, did it. Don't blame me for the CT making ethereal noises!   

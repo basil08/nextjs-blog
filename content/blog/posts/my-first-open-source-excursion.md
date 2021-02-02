@@ -1,6 +1,7 @@
 ---
 title: My first open source excursion
 author: Basil Labib
+date: '2020-10-28'
 ---
 
 Granted that I have atleast a dozen projects hanging in midair (figuratively) on my hard disk (literally).

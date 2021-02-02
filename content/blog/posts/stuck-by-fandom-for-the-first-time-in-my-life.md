@@ -2,6 +2,7 @@
 title: Stuck by fandom for the first time in my life
 author: Basil Labib
 tags: music dreampop cocteautwins fan
+date: '2020-10-07'
 ---
 
 Ethereal, heavenly, celestial, opulent, splendid, otherworldly - these adjectives form the regular staple of people who dare to describe the music of the Cocteau Twins (pronounced: cock-tow twins). Honestly, I think it's an effort in vain. Because this band defies all possibilities of being defined by words. Cage them in artificial genres and you will fail. You can only _experience_ their _"sacred microcosm"_ yourself as Azam Ali so eloquently puts [it][azamali]. 

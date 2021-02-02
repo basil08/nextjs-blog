@@ -3,6 +3,7 @@ title: ! 'A Discord Bot for my friends'
 author: Basil Labib
 excerpt_separator: <!--more-->
 tags: discord bot dev nodejs discordjs
+date: '2020-11-17'
 ---
 
 ## Abstract   

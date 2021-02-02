@@ -2,6 +2,7 @@
 title: ! 'Year In Review - 2020'
 author: Basil Labib
 excerpt_separator: <!--more-->
+date: '2021-01-01'
 ---
 
 ## Abstract   
